@@ -6,15 +6,21 @@
 /*   By: spaipur- <spaipur-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/01 12:27:36 by spaipur-          #+#    #+#             */
-/*   Updated: 2026/10/05 11:36:03 by spaipur-         ###   ########.fr       */
+/*   Updated: 2026/10/06 15:41:56 by spaipur-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include"claptrap.hpp"
+#include <algorithm>
+
+ClapTrap::ClapTrap():name("Default"),hitPoints(10),energyPoints(10),attackDamage(0)
+{
+    std::cout << "Default constructor is called" << std::endl;
+}
 
 ClapTrap::ClapTrap(std::string name):name(name),hitPoints(10),energyPoints(10),attackDamage(0)
 {
-    // std::cout << "Default and Parametric constructor is called" << std::endl;
+    std::cout << "Parameterized constructor is called" << std::endl;
     std::cout << "Claptrap " << this->name << " has been created!" << std::endl;
 }
 
