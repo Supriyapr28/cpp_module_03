@@ -14,6 +14,7 @@
 #define EX03_CLAPTRAP_HPP
 
 #include <iostream>
+#include <string>
 #include <algorithm>
 
 class ClapTrap
@@ -27,7 +28,7 @@ class ClapTrap
     public:
         ClapTrap(std::string name);
         ClapTrap(const ClapTrap &src);
-        ~ClapTrap(); 
+        virtual ~ClapTrap(); 
 
         ClapTrap &operator=(const ClapTrap &src);
         

@@ -10,8 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef EX01_SCAVTRAP_HPP
-#define EX01_SCAVTRAP_HPP
+#ifndef EX03_SCAVTRAP_HPP
+#define EX03_SCAVTRAP_HPP
 
 #include "claptrap.hpp"
 

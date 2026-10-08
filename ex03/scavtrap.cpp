@@ -11,7 +11,6 @@
 /* ************************************************************************** */
 
 #include "scavtrap.hpp"
-#include "claptrap.hpp"
 
 ScavTrap::ScavTrap(std::string name):ClapTrap(name)
 {

@@ -36,6 +36,7 @@ DiamondTrap &DiamondTrap::operator=(const DiamondTrap &src)
     std::cout << "Copy assignment operator is called" << std::endl;
     if (this != &src)
     {
+        ClapTrap::name = src.ClapTrap::name;
         this->name = src.name;
         this->hitPoints = src.hitPoints;
         this->energyPoints = src.energyPoints;
