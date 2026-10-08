@@ -6,21 +6,22 @@
 /*   By: spaipur- <spaipur-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/01 14:02:24 by spaipur-          #+#    #+#             */
-/*   Updated: 2026/10/05 14:53:40 by spaipur-         ###   ########.fr       */
+/*   Updated: 2026/10/06 15:41:56 by spaipur-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include"scavtrap.hpp"
+#include "fragtrap.hpp"
 
 int main(void)
 {
     ClapTrap sirenhead("sirenhead");
     ClapTrap househead("househead");
-    ScavTrap megalodon("megalodon");
+    FragTrap megalodon("megalodon");
+
     sirenhead.attack("househead");
     househead.takeDamage(3);
     househead.beRepaired(2);
-    
+
     househead.attack("sirenhead");
     sirenhead.takeDamage(5);
 
@@ -35,7 +36,8 @@ int main(void)
     }
     sirenhead.attack("househead");
     sirenhead.beRepaired(10);
-    
+
     megalodon.attack("sirenhead");
-    megalodon.guardGate();
+    megalodon.highFivesGuys();
+    return 0;
 }
