@@ -38,10 +38,13 @@ ClapTrap::~ClapTrap()
 ClapTrap &ClapTrap::operator=(const ClapTrap &src)
 {
     std::cout << "ClapTrap assignment operator is called" << std::endl;
-    this->name = src.name;
-    this->hitPoints = src.hitPoints;
-    this->energyPoints = src.energyPoints;
-    this->attackDamage = src.attackDamage;
+    if (this != &src)
+    {
+        this->name = src.name;
+        this->hitPoints = src.hitPoints;
+        this->energyPoints = src.energyPoints;
+        this->attackDamage = src.attackDamage;
+    }
     return *this;
 }
 
