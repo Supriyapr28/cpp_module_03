@@ -6,7 +6,7 @@
 /*   By: spaipur- <spaipur-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/01 11:59:33 by spaipur-          #+#    #+#             */
-/*   Updated: 2026/10/05 14:54:50 by spaipur-         ###   ########.fr       */
+/*   Updated: 2026/10/08 12:48:26 by spaipur-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 #define EX01_CLAPTRAP_HPP
 
 #include <iostream>
+#include <string>
 #include <algorithm>
 
 class ClapTrap
@@ -25,9 +26,10 @@ class ClapTrap
         unsigned int attackDamage;
 
     public:
+        ClapTrap();
         ClapTrap(std::string name);
         ClapTrap(const ClapTrap &src);
-        ~ClapTrap(); 
+        virtual ~ClapTrap(); 
 
         ClapTrap &operator=(const ClapTrap &src);
         
