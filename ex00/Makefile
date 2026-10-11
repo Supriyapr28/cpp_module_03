@@ -13,7 +13,7 @@
 NAME	= claptrap
 CXX		= c++
 CXXFLAGS	= -Wall -Wextra -Werror -std=c++11
-SRCS	= main.cpp claptrap.cpp
+SRCS	= main.cpp ClapTrap.cpp
 OBJS	= $(SRCS:.cpp=.o)
 
 all: $(NAME)

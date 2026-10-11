@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   scavtrap.hpp                                       :+:      :+:    :+:   */
+/*   ScavTrap.hpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: spaipur- <spaipur-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -13,7 +13,7 @@
 #ifndef SCAVTRAP_HPP
 #define SCAVTRAP_HPP
 
-#include "claptrap.hpp"
+#include "ClapTrap.hpp"
 
 class ScavTrap : public ClapTrap
 {
@@ -23,7 +23,7 @@ class ScavTrap : public ClapTrap
         ScavTrap();
         ScavTrap(std::string name);
         ScavTrap(const ScavTrap &src);
-        virtual ~ScavTrap();
+        ~ScavTrap();
 
         ScavTrap &operator=(const ScavTrap &src);
 

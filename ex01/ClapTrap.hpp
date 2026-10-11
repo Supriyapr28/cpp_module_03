@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   claptrap.hpp                                       :+:      :+:    :+:   */
+/*   ClapTrap.hpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: spaipur- <spaipur-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -18,11 +18,11 @@
 
 class ClapTrap
 {
-    private:
-        std::string name;
-        unsigned int hitPoints;
-        unsigned int energyPoints;
-        unsigned int attackDamage;
+    protected:
+        std::string name = "Default";
+        unsigned int hitPoints = 10;
+        unsigned int energyPoints = 10;
+        unsigned int attackDamage = 0;
 
     public:
         ClapTrap();

@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   diamondtrap.hpp                                    :+:      :+:    :+:   */
+/*   DiamondTrap.hpp                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: spaipur- <spaipur-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -14,8 +14,8 @@
 #define DIAMONDTRAP_HPP
 
 #include <iostream>
-#include "scavtrap.hpp"
-#include "fragtrap.hpp"
+#include "ScavTrap.hpp"
+#include "FragTrap.hpp"
 
 class DiamondTrap : public ScavTrap, public FragTrap
 {
@@ -24,7 +24,7 @@ private:
 public:
     DiamondTrap(std::string name);
     DiamondTrap(const DiamondTrap &src);
-    virtual ~DiamondTrap();
+    ~DiamondTrap();
 
     DiamondTrap &operator=(const DiamondTrap &src);
 

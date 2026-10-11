@@ -1,21 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   scavtrap.cpp                                       :+:      :+:    :+:   */
+/*   ScavTrap.cpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: spaipur- <spaipur-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/05 11:40:43 by spaipur-          #+#    #+#             */
-/*   Updated: 2026/10/08 13:27:29 by spaipur-         ###   ########.fr       */
+/*   Updated: 2026/10/05 14:35:12 by spaipur-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "scavtrap.hpp"
-
-ScavTrap::ScavTrap()
-{
-    std::cout << "ScavTrap" << this->name << "created with default constructor" << std::endl;
-}
+#include "ScavTrap.hpp"
 
 ScavTrap::ScavTrap(std::string name):ClapTrap(name)
 {
@@ -34,7 +29,7 @@ ScavTrap::ScavTrap(const ScavTrap &src): ClapTrap(src)
 
 ScavTrap::~ScavTrap()
 {
-    std::cout << "ScavTrap " << this->name << " has been destroyed" << std::endl;
+    std::cout << "ScavTrap " << this->name << " is destroyed" << std::endl;
 }
 
 ScavTrap &ScavTrap::operator=(const ScavTrap &src)

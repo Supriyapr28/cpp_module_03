@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include"claptrap.hpp"
+#include"ClapTrap.hpp"
 
 int main(void)
 {
@@ -30,11 +30,12 @@ int main(void)
     sirenhead.attack("househead");
     househead.takeDamage(7);
 
-    
+    std::cout <<"---test case-4---"<< std::endl;
     for (int i = 0; i < 11; i++)
     {
         sirenhead.attack("househead");
         househead.takeDamage(1);
     }
-    sirenhead.attack("househead");
+    househead.attack("sirenhead");
+    househead.beRepaired(5);
 }

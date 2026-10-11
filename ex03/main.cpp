@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "diamondtrap.hpp"
+#include "DiamondTrap.hpp"
 
 int main(void)
 {
@@ -32,5 +32,8 @@ int main(void)
     DiamondTrap copy(diamond);
     copy.whoAmI();
 
+    ClapTrap *c = new DiamondTrap("Hello");
+    c->attack("Hell");
+    delete c;
     return 0;
 }
